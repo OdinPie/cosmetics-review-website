@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <nav>
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 sticky" style={{position: 'sticky', top:0}}>
   <div className="flex-1">
     <img className='w-14 h-16' src="https://i.ibb.co/4WRRhwk/pngwing-com.png" alt="girl" />
     <a className="btn btn-ghost normal-case text-xl">GLOSSYGURU</a>

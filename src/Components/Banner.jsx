@@ -3,8 +3,13 @@ import React from 'react';
 const Banner = () => {
     return (
         <div>
-            <div className="carousel w-full">
+            <div className="carousel w-full overflow-hidden">
   <div id="slide1" className="carousel-item relative w-full">
+    
+    <h2 className='absolute top-1/4 left-2/4 text-white font-extralight text-5xl text-right'>Check out products from your <br /><br /> Favourite Brand and get <br /><br /> Top-Notch Reviews</h2><br />
+  <a href="#brands"><button className='absolute top-3/4 left-3/4 btn px-20 bg-transparent text-rose-500'>EXPLORE</button></a> 
+   
+  
     <img src="https://img.freepik.com/free-photo/view-frame-with-make-up-products-flowers_23-2148301830.jpg?w=996&t=st=1697744181~exp=1697744781~hmac=4c29faac2c21f382edd4341593c1f5f28dda9cee3e9559387cf4d0c1c5b30853" className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide2" className="btn btn-circle">❮</a> 
@@ -12,26 +17,15 @@ const Banner = () => {
     </div>
   </div> 
   <div id="slide2" className="carousel-item relative w-full">
+  <h2 className='absolute top-1/3 left-1/3 right-1/3 text-black font-extralight text-4xl text-center'><strong>Sign Up Now </strong><br /><br /> to be a premium client <br /> <br /><h4 className='text-lg'>Add Product, View Details and many more!</h4></h2><br />
+  <button className='absolute bottom-1/3 left-1/3 right-1/3 btn px-20 bg-transparent border-black text-rose-500'>SIGN UP</button>
     <img src="https://img.freepik.com/free-photo/top-view-different-beauty-products-composition_23-2148574459.jpg?w=996&t=st=1697744346~exp=1697744946~hmac=0718789e32698a54a36fd48bcb0d883ecef27c3b1f04cf9122b3536ee1110df6" className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide1" className="btn btn-circle">❮</a> 
       <a href="#slide1" className="btn btn-circle">❯</a>
     </div>
   </div> 
-  <div id="slide3" className="carousel-item relative w-full">
-    <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide2" className="btn btn-circle">❮</a> 
-      <a href="#slide4" className="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide4" className="carousel-item relative w-full">
-    <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide3" className="btn btn-circle">❮</a> 
-      <a href="#slide1" className="btn btn-circle">❯</a>
-    </div>
-  </div>
+ 
 </div>
         </div>
     );
