@@ -7,15 +7,23 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import AddProducts from './Components/AddProducts.jsx';
+import Banner from './Components/Banner.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
-  },
-  {
-    path: "/addproducts",
-    element: <AddProducts></AddProducts>
+    children : [
+      {
+          path: "/addproducts",
+          element: <AddProducts></AddProducts>
+        },
+        {
+          path: "/",
+          element: <Banner></Banner>
+        }
+    ]
   }
+  
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
