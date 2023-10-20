@@ -4,9 +4,7 @@ import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 const Product = ({product}) => {
     const navigate = useNavigate();
-    const handleDetail = id =>{
-        
-    }
+    
     const handleDelete = id =>{
         Swal.fire({
             title: 'Are you sure?',
@@ -27,6 +25,9 @@ const Product = ({product}) => {
           })
     }
     const {brand, name, photoURL, type, price, rating, _id} = product;
+    const handleDetail = id =>{
+        navigate(`/product/${id}`);
+    }
     return (
         <div>
             <div className=" card-compact w-96 bg-base-100 shadow-xl">

@@ -10,6 +10,7 @@ import AddProducts from './Components/AddProducts.jsx';
 import Banner from './Components/Banner.jsx';
 import Brands from './Components/Brands.jsx';
 import Brand from './Components/Brand.jsx';
+import ProductDetail from './Components/ProductDetail.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,6 +34,11 @@ const router = createBrowserRouter([
           path: "/brand/:id",
           element: <Brand></Brand>,
           loader: () => fetch('/brand.json')
+        },
+        {
+          path: "/product/:prodid",
+          element: <ProductDetail></ProductDetail>,
+          loader: () => fetch('http://localhost:5000/products')
         }
     ]
   }
