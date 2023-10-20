@@ -38,7 +38,7 @@ const AddProducts = () => {
     }
     return (
         <div className="font-poppins" >
-            <div className="card flex-shrink-0 w-full max-w-5xl mx-auto shadow-2xl bg-[#DEB6AB]" style={{backgroundImage: `url('https://img.freepik.com/premium-photo/cosmetics-products-spilled-from-makeup-bag-pink-background_23-2148129464.jpg')`}}>
+            <div className="card flex-shrink-0 w-full max-w-5xl mx-auto shadow-2xl bg-[#DEB6AB]" style={{backgroundImage: `url('https://img.freepik.com/free-photo/view-arrangement-with-make-up-flowers_23-2148301813.jpg?w=996&t=st=1697799909~exp=1697800509~hmac=85d004cf2eb200ed4b288291cfade795ff8f1dc70c9c8e9788dca62b7f8e5c7c)`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
       <form onSubmit={handleAddProduct} className="card-body ">
         <h2 className="text-2xl font-semibold p-2 rounded-lg" style={{backgroundColor: 'rgba(180, 105, 150, 0.5)', color : '#fff'}}>Add a Product!</h2>
         {/* <p className="font-semibold">Want to contribute to the beauty community by giving your valuable review? Well wait no further! <br /> Just fillup this easy form and you are good to go!</p> */}
