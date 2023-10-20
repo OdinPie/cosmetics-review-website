@@ -2,6 +2,8 @@
 import { NavLink, Outlet } from 'react-router-dom'
 import './App.css'
 import { FaBeer } from 'react-icons/fa';
+import Banner from './Components/Banner';
+import Brands from './Components/Brands';
 function App() {
  
   return (
@@ -57,6 +59,7 @@ function App() {
 </div>
     </nav>
     <Outlet></Outlet>
+    
     </>
   )
 }

@@ -1,0 +1,45 @@
+[
+    {
+      "brand_name": "Rare Beauty",
+      "thumbnail": "https://www.rarebeauty.com/cdn/shop/files/share-image.jpg?v=1613733998",
+      "img1": "image_url_here",
+      "img2": "image_url_here",
+      "img3": "image_url_here"
+    },
+    {
+      "brand_name": "COSRX",
+      "thumbnail": "https://cdn.shopify.com/s/files/1/0467/1999/1971/files/Corsx_480x480.jpg?v=1622602385",
+      "img1": "image_url_here",
+      "img2": "image_url_here",
+      "img3": "image_url_here"
+    },
+    {
+      "brand_name": "Chanel",
+      "thumbnail": "https://media.designrush.com/inspirations/129360/conversions/_1513770087_98_chanel1-preview.jpg",
+      "img1": "image_url_here",
+      "img2": "image_url_here",
+      "img3": "image_url_here"
+    },
+    {
+      "brand_name": "Estee Lauder",
+      "thumbnail": "https://1000logos.net/wp-content/uploads/2020/05/Logo-Estee-Lauder.jpg",
+      "img1": "image_url_here",
+      "img2": "image_url_here",
+      "img3": "image_url_here"
+    },
+    {
+      "brand_name": "Dior",
+      "thumbnail": "https://static.vecteezy.com/system/resources/previews/023/599/609/original/dior-brand-clothes-symbol-logo-with-name-black-design-luxury-fashion-illustration-free-vector.jpg",
+      "img1": "image_url_here",
+      "img2": "image_url_here",
+      "img3": "image_url_here"
+    },
+    {
+      "brand_name": "Beauty of Joseon",
+      "thumbnail": "https://images.soco.id/ef19d408-fc54-469a-a4d8-c5fb93becbc3-.jpg",
+      "img1": "image_url_here",
+      "img2": "image_url_here",
+      "img3": "image_url_here"
+    }
+  ]
+  

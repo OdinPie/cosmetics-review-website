@@ -1,6 +1,10 @@
 import React from 'react';
+import Brands from './Brands';
+import { useLoaderData } from 'react-router-dom';
 
 const Banner = () => {
+  const brands = useLoaderData();
+  console.log(brands);
     return (
         <div>
             <div className="carousel w-full overflow-hidden">
@@ -27,6 +31,16 @@ const Banner = () => {
   </div> 
  
 </div>
+      <div id='brands' className='text-center my-10'>
+            <h2 className='font-poppins font-thin text-4xl'>Brands</h2><br />
+            <p>Choose a brand to see the affiliated products</p><br /><br />
+            <div className='grid grid-cols-3 gap-5'>
+              {
+              brands && brands.map(brand => <Brands brand={brand}></Brands>)
+            }
+            </div>
+            
+        </div>
         </div>
     );
 };
