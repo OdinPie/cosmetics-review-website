@@ -1,12 +1,19 @@
 
 import { Link, NavLink, Outlet, useLoaderData } from 'react-router-dom'
 import './App.css'
-import { FaBeer } from 'react-icons/fa';
-import Banner from './Components/Banner';
-import Brands from './Components/Brands';
+import { AuthContext } from './Provider/AuthProvider';
+import { useContext } from 'react';
+
 function App() {
   const cartItem = useLoaderData();
   const itemnumber = cartItem.length;
+  const {user, logOut} = useContext(AuthContext);
+    const handleLogOut = () =>{
+      logOut()
+      .then()
+      .catch(error=>console.log(error.message))
+      console.log("user logged out");
+    }
   return (
     <>
     <nav>
@@ -50,12 +57,23 @@ function App() {
       </label>
     
     <div>
-      {/* <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
-          <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+      <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+      <div className="w-10 rounded-full mx-2">
+          {
+             user? <img src={user.photoURL} /> : " "
+          }
         </div>
-      </label> */}
-      <a className="btn">LOGIN</a>
+      </label>
+      <label tabIndex={0} className="btn btn-ghost">
+      <div className='mx-2 border-s-white border-2 rounded-lg p-1'>
+         {
+             user? <h3>{user.displayName}</h3> : " "
+         } 
+      </div>
+</label>
+{ user? <button onClick={handleLogOut} className='btn'>Logout</button>:
+      <Link to="/login" className="btn">Login</Link>}
+      
       
     </div>
   </div>

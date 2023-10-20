@@ -1,6 +1,6 @@
 import React from 'react';
 import Brands from './Brands';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const Banner = () => {
   const brands = useLoaderData();
@@ -22,7 +22,9 @@ const Banner = () => {
   </div> 
   <div id="slide2" className="carousel-item relative w-full">
   <h2 className='absolute top-1/3 left-1/3 right-1/3 text-black font-extralight text-4xl text-center'><strong>Sign Up Now </strong><br /><br /> to be a premium client <br /> <br /><h4 className='text-lg'>Add Product, View Details and many more!</h4></h2><br />
-  <button className='absolute bottom-1/3 left-1/3 right-1/3 btn px-20 bg-transparent border-black text-rose-500'>SIGN UP</button>
+  <Link to="/register">
+      <button className='absolute bottom-1/3 left-1/3 right-1/3 btn px-20 bg-transparent border-black text-rose-500'>SIGN UP</button>
+  </Link>
     <img src="https://img.freepik.com/free-photo/top-view-different-beauty-products-composition_23-2148574459.jpg?w=996&t=st=1697744346~exp=1697744946~hmac=0718789e32698a54a36fd48bcb0d883ecef27c3b1f04cf9122b3536ee1110df6" className="w-full" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide1" className="btn btn-circle">❮</a> 

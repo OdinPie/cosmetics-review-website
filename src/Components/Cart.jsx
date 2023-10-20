@@ -5,11 +5,14 @@ import Cartcard from './Cartcard';
 const Cart = () => {
     const items = useLoaderData();
     return (
-        <div>
+        <>
+        <br /><br />
+        <h1 className='text-center text-3xl'>CART</h1><br /><br /> 
+        <div className='grid grid-cols-3 gap-20'>
             {
                 items.map(item=> <Cartcard item={item}></Cartcard>)
             }
-        </div>
+        </div></>
     );
 };
 

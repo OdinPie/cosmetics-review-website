@@ -27,6 +27,7 @@ const ProductDetail = () => {
                     showConfirmButton: false,
                     timer: 1500
                   })
+                  window.location.reload(false);
             }
            
         })
