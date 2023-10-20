@@ -1,11 +1,12 @@
 import { RiDeleteBin2Line } from "react-icons/ri";
 import { AiOutlineEdit } from "react-icons/ai";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Product = ({product}) => {
     const navigate = useNavigate();
     
     const handleDelete = id =>{
+        console.log(id);
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -16,11 +17,21 @@ const Product = ({product}) => {
             confirmButtonText: 'Yes, delete it!'
           }).then((result) => {
             if (result.isConfirmed) {
-              Swal.fire(
-                'Deleted!',
-                'Product has been deleted.',
-                'success'
-              )
+                fetch(`http://localhost:5000/product/${id}`,{
+                    method: 'DELETE'
+                })
+                .then(res=> res.json())
+                .then(data=>{
+                    if(data.deletedCount>0){
+                          Swal.fire(
+                            'Deleted!',
+                            'Product has been deleted.',
+                            'success'
+                          )
+                          window.location.reload(false);
+                    }
+                })
+           
             }
           })
     }
@@ -44,7 +55,9 @@ const Product = ({product}) => {
                         <div>
                             {/* icons */}
                             <button className="btn m-2" onClick={()=>{handleDelete(_id)}}><RiDeleteBin2Line></RiDeleteBin2Line></button>
+                            <Link to={`/update/${_id}`}>
                             <button className="btn"><AiOutlineEdit></AiOutlineEdit></button>
+                            </Link>
                             
                             
                         </div>

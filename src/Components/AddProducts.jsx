@@ -10,7 +10,7 @@ const AddProducts = () => {
         const price = form.price.value;
         const photoURL = form.photoURL.value;
         const detail = form.detail.value;
-        const newProduct = {name, brand, type, price, rating, photoURL, detail};
+        const newProduct = {brand,name, type, price, rating, photoURL, detail};
         console.log(newProduct);
 
         //posting newProduct

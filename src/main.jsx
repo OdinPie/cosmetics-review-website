@@ -11,6 +11,7 @@ import Banner from './Components/Banner.jsx';
 import Brands from './Components/Brands.jsx';
 import Brand from './Components/Brand.jsx';
 import ProductDetail from './Components/ProductDetail.jsx';
+import UpdateProduct from './Components/UpdateProduct.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,6 +40,11 @@ const router = createBrowserRouter([
           path: "/product/:prodid",
           element: <ProductDetail></ProductDetail>,
           loader: () => fetch('http://localhost:5000/products')
+        },
+        {
+          path: "/update/:prodid",
+          element: <UpdateProduct></UpdateProduct>,
+          loader: ({params})=>fetch(`http://localhost:5000/product/${params.prodid}`)
         }
     ]
   }
