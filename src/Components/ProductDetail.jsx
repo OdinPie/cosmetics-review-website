@@ -9,7 +9,7 @@ const ProductDetail = () => {
     const handleCart = () =>{
         
         const item = {name, price};
-        fetch('http://localhost:5000/cart',{
+        fetch('https://cosmetics-server-aj9uuoanz-odinpies-projects.vercel.app/cart',{
             method: "POST",
             headers : {
                 "Content-Type" : "application/json"

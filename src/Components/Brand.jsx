@@ -9,7 +9,7 @@ const Brand = () => {
     const {brand_name, img1, img2, img3} = brand;
     const [products, setProducts] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/products')
+        fetch('https://cosmetics-server-aj9uuoanz-odinpies-projects.vercel.app/products')
         .then(res=> res.json())
         .then(data=>{
             const brandproductarray=[];

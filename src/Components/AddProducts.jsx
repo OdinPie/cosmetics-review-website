@@ -15,7 +15,7 @@ const AddProducts = () => {
 
         //posting newProduct
 
-        fetch('http://localhost:5000/products',{
+        fetch('https://cosmetics-server-aj9uuoanz-odinpies-projects.vercel.app/products',{
             method: "POST",
             headers : {
                 "Content-Type" : "application/json"
