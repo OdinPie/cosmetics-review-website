@@ -1,45 +1,51 @@
 [
     {
+      "id": 1,
       "brand_name": "Rare Beauty",
       "thumbnail": "https://www.rarebeauty.com/cdn/shop/files/share-image.jpg?v=1613733998",
-      "img1": "image_url_here",
-      "img2": "image_url_here",
-      "img3": "image_url_here"
+      "img1": "https://www.byrdie.com/thmb/ValcUXEzWDOY3mt-ZJ3lRSESavw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/selenagomez1-989573a61f674999b51f9f569d4cc93a.jpg",
+      "img2": "https://images.lifestyleasia.com/wp-content/uploads/sites/5/2021/07/12145825/Rare-Beauty-Model-Shots-1.jpg",
+      "img3": "https://www.bloomberglinea.com/resizer/1or0tm-Ie9JdBN4TajnC5F8jajQ=/arc-photo-bloomberglinea/arc2-prod/public/E4NKY2SJGRFZVDKZIM6FVX4TBY.jpg"
     },
     {
+      "id": 2,
       "brand_name": "COSRX",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0467/1999/1971/files/Corsx_480x480.jpg?v=1622602385",
-      "img1": "image_url_here",
-      "img2": "image_url_here",
-      "img3": "image_url_here"
+      "img1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv8eJ5n8y-Ln47eTCh5RZ9GA75OBpdi8qfSA&usqp=CAU",
+      "img2": "https://ohlolly.com/cdn/shop/articles/All-About-Cosrx-Acids-1_1024x.jpg?v=1542397716",
+      "img3": "https://i.ytimg.com/vi/FZPm7tE0gk0/mqdefault.jpg"
     },
     {
+      "id": 3,
       "brand_name": "Chanel",
       "thumbnail": "https://media.designrush.com/inspirations/129360/conversions/_1513770087_98_chanel1-preview.jpg",
-      "img1": "image_url_here",
-      "img2": "image_url_here",
-      "img3": "image_url_here"
+      "img1": "https://e3.365dm.com/16/07/2048x1152/chanel-coco-mademoiselle-ad2-1_3674625.jpg",
+      "img2": "https://jingdaily.com/wp-content/uploads/2020/03/International.jpg",
+      "img3": "https://i.ytimg.com/vi/zhdZcBsa-dk/maxresdefault.jpg"
     },
     {
+      "id": 4,
       "brand_name": "Estee Lauder",
       "thumbnail": "https://1000logos.net/wp-content/uploads/2020/05/Logo-Estee-Lauder.jpg",
-      "img1": "image_url_here",
-      "img2": "image_url_here",
-      "img3": "image_url_here"
+      "img1": "https://www.buyandship.com.my/contents/uploads/2023/05/shop-estee-lauder-and-ship-to-malaysia-and-singapore.jpg",
+      "img2": "https://m.esteelauder.com.sg/media/export/cms_2.0/merch-windows/by-campaign/spring-2022-DW-SIP-Sheer-repromote/SC_GLO120-US-DW_repromote-mob-header-640x300.jpg",
+      "img3": "https://media.glamourmagazine.co.uk/photos/61389c688cb9467036e0ec02/16:9/w_2560%2Cc_limit/sp20_digital_mu_dwsiplifestylestills_g_0185_a_sq_r300_sq_sf.jpg"
     },
     {
+      "id": 5,
       "brand_name": "Dior",
       "thumbnail": "https://static.vecteezy.com/system/resources/previews/023/599/609/original/dior-brand-clothes-symbol-logo-with-name-black-design-luxury-fashion-illustration-free-vector.jpg",
-      "img1": "image_url_here",
-      "img2": "image_url_here",
-      "img3": "image_url_here"
+      "img1": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Christian_Dior%2C_30_Avenue_Montaigne%2C_Paris_2016.jpg/1200px-Christian_Dior%2C_30_Avenue_Montaigne%2C_Paris_2016.jpg",
+      "img2": "https://www.dior.com/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dwe078c86c/images/beauty/01-FRAGRANCES/2023/SAUVAGE/REPUSH-2023/push_quatour_elixir3000x3000.jpg",
+      "img3": "https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/815/cached.offlinehbpl.hbpl.co.uk/news/OMC/Dior_new-20190513085748637.jpg"
     },
     {
+      "id": 6,
       "brand_name": "Beauty of Joseon",
       "thumbnail": "https://images.soco.id/ef19d408-fc54-469a-a4d8-c5fb93becbc3-.jpg",
-      "img1": "image_url_here",
-      "img2": "image_url_here",
-      "img3": "image_url_here"
+      "img1": "https://beautyofjoseon.com/cdn/shop/files/UntitGRPled.png?v=1694151534&width=1341",
+      "img2": "https://lacosmetique.com.au/cdn/shop/files/Productimages_2_1800x1800.png?v=1686038836",
+      "img3": "https://beautyofjoseon.com/cdn/shop/files/matte_sun.jpg?v=1684804799&width=1200"
     }
   ]
   

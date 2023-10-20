@@ -9,6 +9,7 @@ import {
 import AddProducts from './Components/AddProducts.jsx';
 import Banner from './Components/Banner.jsx';
 import Brands from './Components/Brands.jsx';
+import Brand from './Components/Brand.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +28,11 @@ const router = createBrowserRouter([
           path: "/",
           element: <Brands></Brands>,
           
+        },
+        {
+          path: "/brand/:id",
+          element: <Brand></Brand>,
+          loader: () => fetch('/brand.json')
         }
     ]
   }
