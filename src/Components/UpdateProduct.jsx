@@ -20,7 +20,7 @@ const UpdateProduct = () => {
 
         //upadting Product
 
-        fetch(`https://cosmetics-server-aj9uuoanz-odinpies-projects.vercel.app/product/${_id}`,{
+        fetch(`https://cosmetics-server.vercel.app/product/${_id}`,{
             method: "PUT",
             headers : {
                 "Content-Type" : "application/json"

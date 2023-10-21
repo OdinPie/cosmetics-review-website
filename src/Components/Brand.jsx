@@ -9,7 +9,7 @@ const Brand = () => {
     const {brand_name, img1, img2, img3} = brand;
     const [products, setProducts] = useState([]);
     useEffect(()=>{
-        fetch('https://cosmetics-server-aj9uuoanz-odinpies-projects.vercel.app/products')
+        fetch('https://cosmetics-server.vercel.app/products')
         .then(res=> res.json())
         .then(data=>{
             const brandproductarray=[];
@@ -23,6 +23,7 @@ const Brand = () => {
             })
         })
     },[])
+    console.log(products);
     return (
         <div className=' max-w-7xl mx-auto'>
             <div className='flex flex-col justify-center items-center'>
@@ -52,12 +53,15 @@ const Brand = () => {
             </div>
             <br /><br />
             <h1 className='text-4xl font-extralight'>Check Out the Products</h1><br /><br />
-            <div className='grid grid-cols-3 gap-8'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                {
-                products && products.map(product=> <Product product={product}></Product>)
-                }  
+                products && products.map(product=> <Product product={product}></Product>)  
+                } 
+                
             </div>
-           
+                {
+                    products.length===0 && <h2 className='text-2xl text-center'>Sorry <br />No products Available right now</h2>
+                } 
             </div>
             
 

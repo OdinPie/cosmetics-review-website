@@ -3,6 +3,10 @@ import { Link, NavLink, Outlet, useLoaderData } from 'react-router-dom'
 import './App.css'
 import { AuthContext } from './Provider/AuthProvider';
 import { useContext } from 'react';
+import Footer from './Components/Footer';
+import Marquee from './Components/MarqueeLogo';
+import MarqueeLogo from './Components/MarqueeLogo';
+import Contact from './Components/Contact';
 
 function App() {
   const cartItem = useLoaderData();
@@ -81,6 +85,13 @@ function App() {
     </nav>
     <Outlet></Outlet>
     
+    <Contact>
+      <br /><br />
+    </Contact>
+    <MarqueeLogo></MarqueeLogo>
+    <br /><br />
+    
+    <Footer></Footer>
     </>
   )
 }

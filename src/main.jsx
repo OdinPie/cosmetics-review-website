@@ -22,7 +22,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
-    loader: ()=> fetch('https://cosmetics-server-aj9uuoanz-odinpies-projects.vercel.app/cart'),
+    loader: ()=> fetch('https://cosmetics-server.vercel.app/cart'),
     errorElement: <Errorpage></Errorpage>,
     children : [
       {
@@ -47,17 +47,17 @@ const router = createBrowserRouter([
         {
           path: "/product/:prodid",
           element:<PrivateRouter><ProductDetail></ProductDetail></PrivateRouter> ,
-          loader: () => fetch('https://cosmetics-server-aj9uuoanz-odinpies-projects.vercel.app/products')
+          loader: () => fetch('https://cosmetics-server.vercel.app/products')
         },
         {
           path: "/update/:prodid",
           element:<PrivateRouter><UpdateProduct></UpdateProduct></PrivateRouter> ,
-          loader: ({params})=>fetch(`https://cosmetics-server-aj9uuoanz-odinpies-projects.vercel.app/product/${params.prodid}`)
+          loader: ({params})=>fetch(`https://cosmetics-server.vercel.app/product/${params.prodid}`)
         },
         {
           path: '/cart',
           element:<PrivateRouter><Cart></Cart></PrivateRouter> ,
-          loader: ()=> fetch('https://cosmetics-server-aj9uuoanz-odinpies-projects.vercel.app/cart')
+          loader: ()=> fetch('https://cosmetics-server.vercel.app/cart')
         },
         {
           path: '/login',

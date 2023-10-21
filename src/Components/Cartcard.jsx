@@ -1,7 +1,9 @@
 import React from 'react';
 import Swal from 'sweetalert2';
+import { RiDeleteBin2Line } from "react-icons/ri";
+
 const Cartcard = ({item}) => {
-    const {name, price} = item;
+    const {name, price,photoURL,_id} = item;
     const handleDelete = id =>{
         console.log(id);
         Swal.fire({
@@ -14,7 +16,7 @@ const Cartcard = ({item}) => {
             confirmButtonText: 'Yes, delete it!'
           }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://cosmetics-server-aj9uuoanz-odinpies-projects.vercel.app/cart/${id}`,{
+                fetch(`https://cosmetics-server.vercel.app/cart/${id}`,{
                     method: 'DELETE'
                 })
                 .then(res=> res.json())
@@ -34,12 +36,13 @@ const Cartcard = ({item}) => {
     }
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card card-side bg-base-100 shadow-xl">
+        <figure><img src={photoURL} alt={name}/></figure>
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
                     <p>Price: ${price}</p>
                     <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <button className="btn m-2 bg-rose-100" onClick={()=>{handleDelete(_id)}}><RiDeleteBin2Line></RiDeleteBin2Line></button>
                     </div>
                 </div>
                 </div>
