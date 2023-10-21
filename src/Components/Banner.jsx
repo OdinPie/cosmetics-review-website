@@ -36,7 +36,7 @@ const Banner = () => {
       <div id='brands' className='text-center my-10'>
             <h2 className='font-poppins font-thin text-4xl'>Brands</h2><br />
             <p>Choose a brand to see the affiliated products</p><br /><br />
-            <div className='grid grid-cols-3 gap-5'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
               {
               brands && brands.map(brand => <Brands brand={brand}></Brands>)
             }
