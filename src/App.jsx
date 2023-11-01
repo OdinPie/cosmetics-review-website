@@ -2,7 +2,7 @@
 import { Link, NavLink, Outlet, useLoaderData } from 'react-router-dom'
 import './App.css'
 import { AuthContext } from './Provider/AuthProvider';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import Footer from './Components/Footer';
 import Marquee from './Components/MarqueeLogo';
 import MarqueeLogo from './Components/MarqueeLogo';
@@ -18,10 +18,20 @@ function App() {
       .catch(error=>console.log(error.message))
       console.log("user logged out");
     }
+    const [navbar, setNavbar] = useState(false)
+    const myFunction = () =>{
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        setNavbar(true)
+      } else {
+        setNavbar(false);
+      }
+    }
+    window.onscroll = function() {myFunction()};
+
   return (
     <>
-    <nav>
-    <div className="navbar bg-base-100 sticky" style={{position: 'sticky', top:0}}>
+   {<nav style={{position: 'sticky', top:0, zIndex:20}}>
+    <div className="navbar bg-base-100">
   <div className="flex-1">
     <img className='w-14 h-16' src="https://i.ibb.co/4WRRhwk/pngwing-com.png" alt="girl" />
     <a className="btn btn-ghost normal-case text-xl">GLOSSYGURU</a>
@@ -82,7 +92,7 @@ function App() {
     </div>
   </div>
 </div>
-    </nav>
+    </nav>}
     <Outlet></Outlet>
     
     <Contact>

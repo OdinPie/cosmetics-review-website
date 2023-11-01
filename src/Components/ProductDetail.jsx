@@ -1,6 +1,10 @@
 import React from 'react';
+import LazyLoad from 'react-lazy-load';
 import { useLoaderData, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import ImageZoom from "react-image-zooom";
+
+import ReactDOM from 'react-dom';
 const ProductDetail = () => {
     const {prodid} = useParams();
     const products = useLoaderData();
@@ -33,9 +37,14 @@ const ProductDetail = () => {
         })
     }
     return (
+        <LazyLoad>
         <div className='my-16'>
             <div className="card lg:card-side bg-base-100 shadow-xl">
-            <figure><img src={photoURL} alt="Album"/></figure>
+            
+            <figure className=''>
+                <ImageZoom src={photoURL}></ImageZoom>
+                {/* <img className='' src={photoURL} alt="Album"/> */}
+                </figure>
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>
                 <p>${price}</p>
@@ -46,7 +55,7 @@ const ProductDetail = () => {
                 </div>
             </div>
             </div>
-        </div>
+        </div></LazyLoad>
     );
 };
 
